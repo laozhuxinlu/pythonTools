@@ -1,0 +1,327 @@
+22031,taobao.fenxiao.dealer.requisitionorder.agree,供应商/分销商通过采购申请/经销采购单申请,供应商或分销商通过采购申请/经销采购单审核
+22032,taobao.fenxiao.dealer.requisitionorder.get,批量查询采购申请/经销采购单,批量查询采购申请/经销采购单，目前支持供应商和分销商查询
+22033,taobao.fenxiao.dealer.requisitionorder.query,按编号查询采购申请/经销采购单,按编号查询采购申请/经销采购单，目前支持供应商和分销商查询。
+22111,taobao.fuwu.scores.get,服务平台评价查询接口,根据日期、查询appkey对应服务评价，每次调用只能查询某一天服务评价信息，可设置分页查询，页大小最大为100，非实时接口，延迟时间为30分钟
+22128,taobao.topats.jushita.jdp.datadelete,异步删除rds库数据推送表的数据,异步删除rds库数据推送表的数据
+22129,taobao.jushita.jdp.users.get,获取开通的订单同步服务的用户,获取开通的订单同步服务的用户，含有rds的路由关系
+22134,taobao.customize.tool.list.get,获取定制工具列表,提供定制工具列表. 无入参, 仅返回一个list列表.
+22171,tmall.item.desc.modules.get,商品描述模块信息获取,商品描述模块信息获取，包括运营设定的类目级别的模块信息以及用户自定义模块数量约束。
+22172,taobao.logistics.consign.order.createandsend,创建订单并发货,创建物流订单，并发货。
+22173,taobao.vmarket.eticket.auth.beforeconsume,核销放行的查询接口,针对O2O电子凭证核销放行业务，为满足码商能够核销淘宝码而开放的核销查询接口
+22174,taobao.vmarket.eticket.auth.consume,核销放行的核销接口,针对O2O电子凭证核销放行业务，为满足码商能够核销淘宝码而开放的核销接口
+22175,taobao.inventory.ipc.inventorydetail.get,库存明细查询,查询库存明细
+22209,taobao.ju.cnarea.get,获取生活团报名所需国内省市景区数据,获取聚划算生活团报名所需国内省市景区数据，例如浙江杭州西湖
+22210,taobao.ju.abroadarea.get,获取生活团报名所需国外大洲国家景区数据,获取聚划算生活团报名所需国外大洲国家景区数据，例如亚洲日本富士山
+22211,taobao.logistics.ordertrace.get,流转信息查询,根据物流公司编码（如顺风：SF）与运单号查流转信息。
+22224,tmall.promotag.tag.removetag,删除标签定义,用于删除标签定义，但是要确保目前该标签没有人群在使用。
+22248,taobao.promotionmisc.item.activity.update,修改无条件单品优惠活动,修改无条件单品优惠活动。
+1、该接口只修改活动基本信息和打折信息，如需要增加、删除参与该活动的商品，请调用taobao.promotionmisc.activity.range.add和taobao.promotionmisc.activity.range.remove接口。 
+2、使用该接口时需要同时把未做修改的字段值也传入。 
+
+3、该接口受店铺最低折扣限制，如优惠不生效，请让卖家检查该优惠是否低于店铺的最低折扣设置。
+22249,taobao.promotionmisc.mjs.activity.add,创建满就送活动,创建满就送活动。
+1、可以选择是全店参加或者部分商品参加：participate_range：0表示全部参与； 1表示部分商品参与。 2、如果是部分商品参加，则需要通过taobao.promotionmisc.activity.range.add接口来指定需要参加的商品。 3、该接口创建的优惠受店铺最低折扣限制，如优惠不生效，请让卖家检查该优惠是否低于店铺的最低折扣设置。
+22250,taobao.promotionmisc.mjs.activity.get,查询满就送活动,查询满就送活动
+22251,taobao.promotionmisc.activity.range.add,增加活动参与的商品,增加活动参与的商品，部分商品参与的活动，最大支持指定150个商品。
+22252,taobao.promotionmisc.activity.range.list.get,查询活动参与的商品,查询活动参与的商品
+22253,taobao.promotionmisc.activity.range.remove,去除活动参与的商品,去除活动参与的商品
+22254,taobao.promotionmisc.activity.range.all.remove,清空活动参与的商品,清空活动参与的商品
+22255,taobao.promotionmisc.mjs.activity.list.get,查询满就送活动列表,查询满就送活动列表。注意，该接口的返回值中，只包含活动的主要信息，如activity_id，name，description，start_time，end_time，type，participate_range。优惠的详细信息，请通过taobao.promotionmisc.mjs.activity.get获取。
+22256,taobao.promotionmisc.mjs.activity.update,修改满就送活动,修改满就送活动。 
+1、该接口只修改活动基本信息和打折信息，如需要增加、删除参与该活动的商品，请调用taobao.promotionmisc.activity.range.add和taobao.promotionmisc.activity.range.remove接口。 
+2、使用该接口时需要同时把未做修改的字段值也传入。 
+3、该接口创建的优惠受店铺最低折扣限制，如优惠不生效，请让卖家检查该优惠是否低于店铺的最低折扣设置。
+22257,taobao.promotionmisc.mjs.activity.delete,删除满就送活动,删除满就送活动
+22258,taobao.promotionmisc.item.activity.add,创建无条件单品优惠活动,创建无条件单品优惠活动。1、可以选择是全店参加或者部分商品参加：participate_range：0表示全部参与； 1表示部分商品参与。
+2、如果是部分商品参加，则需要通过taobao.promotionmisc.activity.range.add接口来指定需要参加的商品。
+3、该接口创建的优惠受店铺最低折扣限制，如优惠不生效，请让卖家检查该优惠是否低于店铺的最低折扣设置。
+22259,taobao.promotionmisc.item.activity.get,查询无条件单品优惠活动,查询无条件单品优惠活动
+22260,taobao.promotionmisc.item.activity.list.get,查询无条件单品优惠活动列表,查询无条件单品优惠活动列表
+22261,taobao.promotionmisc.item.activity.delete,删除无条件单品优惠活动,删除无条件单品优惠活动
+22263,taobao.fang.apartment.update,更新楼盘户型信息,更新户型信息API
+22265,taobao.fang.buildingpicture.update,楼盘图片更新与录入,楼盘图片新增和更新API
+22266,taobao.fang.picture.upload,淘宝房产图片上传,房产楼盘图片上传接口
+22267,taobao.fang.building.update,楼盘更新,更新楼盘基础信息
+22288,taobao.wlb.orderdetail.date.get,按照日期范围查询物流订单详情,外部ERP可通过该接口查询一段时间内的物流宝订单，以及订单详情
+22290,taobao.crm.grade.next.get,获取卖家的下一个等级及差距,获取买家在卖家会员体系中下一个层级及升级条件，不返回优惠信息
+22291,taobao.crm.member.group.delete,删除会员标签,删除会员身上的标签
+22292,taobao.crm.members.group.add,给会员打上一个标签,给会员打上一个标签
+22293,taobao.crm.member.group.get,获取买家身上的标签,获取买家身上的标签，不返回标签的总人数
+22294,taobao.crm.benefit.get,获取客户在本店铺的优惠劵,获取客户在本店铺的优惠劵
+22295,tmall.brandcat.propinput.get,判断类目属性是否为可输入,针对监管类目品牌关键属性可输入判断逻辑比较复杂，提供简化属性可输入判断的接口，该接口兼容非关键属性和非监管类目品牌
+22296,taobao.simba.customers.sellerinfo.get,直通车卖家信息查询,直通车卖家信息查询
+22297,taobao.inventory.occupy.adjust,库存占用调整,库存占用调整
+22428,ecs.aliyuncs.com.JoinSecurityGroup.2013-01-10,加入安全组,加入安全组
+22432,ecs.aliyuncs.com.DeleteSecurityGroup.2013-01-10,删除安全组,用于删除一个指定的安全组。
+	只有组内不存在实例，或者没有被其他组的安全规则引用时才可以删除。
+22439,ecs.aliyuncs.com.DescribeInstanceDisks.2013-01-10,查询实例磁盘列表,列举实例的磁盘设备ID和类型。
+？	执行此操作时，实例的状态不能为Starting或Deleted。
+22441,ecs.aliyuncs.com.RebootInstance.2013-01-10,重启实例,重启指定的实例。
+？	只有状态为Running的实例才可以进行此操作。
+？	接口调用成功后实例进入Starting状态。
+？	支持强制重启，强制重启等同于传统服务器的冷启动。
+？	重启后，不自动卸载ISO设备，但会自动卸载挂载的快照设备。
+22442,ecs.aliyuncs.com.StopInstance.2013-01-10,停止实例,停止一个指定的实例。
+？	只有状态为Running的实例才可以进行此操作。
+？	接口调用成功后实例进入Stopped状态。
+？	实例支持强制停止，强制停止等同于断电处理。
+22443,ecs.aliyuncs.com.StartInstance.2013-01-10,启动实例,启动一个指定的实例。
+接口调用成功后实例进入Starting状态。
+实例状态必须为Stopped，才可以调用该接口。
+
+新增:业务欠费停机,不允许启动.
+22444,ecs.aliyuncs.com.DescribeSnapshotAttribute.2013-01-10,查询快照详情,查询指定快照的详细信息。
+22445,ecs.aliyuncs.com.DescribeSnapshots.2013-01-10,查询磁盘设备的快照列表,查询针对云服务器的某个磁盘设备所有的快照列表。
+22446,ecs.aliyuncs.com.DescribeInstanceTypes.2013-01-10,查询实例资源规格列表,查询ECS所提供的实例资源规格列表。
+22447,ecs.aliyuncs.com.AllocatePublicIpAddress.2013-01-10,分配公网IP地址,给一个特定实例分配一个可用公网IP地址。
+？	实例的状态必须为Running或Stopped状态，才可以调用此接口。
+？	分配的IP必须在实例启动或重启后才能生效。
+？	分配的时候只能是IP，不能是IP段。
+？	目前，一个实例只能分配一个IP。当调用此接口时，如果实例已经拥有一个公网IP，将直接返回原IP地址。如果需要重新分配新地址，请先调用释放公网IP地址接口，再重新分配公网IP地址即可。
+22448,ecs.aliyuncs.com.DeleteImage.2013-01-10,删除自定义镜像,删除指定的用户自定义镜像。镜像删除之后将不能再用于创建、重置ECS实例。
+	如果指定的镜像不存在，则请求将被忽略。
+22449,ecs.aliyuncs.com.CreateImage.2013-01-10,创建自定义镜像,通过快照创建自定义镜像，创建后的镜像可以用于新建ECS实例。
+	只有系统盘的快照可以用于创建自定义镜像。
+	只有达到完成状态（进度为100）的快照可以用于创建自定义镜像。
+
+升级,去掉boss逻辑
+22450,ecs.aliyuncs.com.DeleteSnapshot.2013-01-10,删除快照,删除指定实例、指定磁盘设备的快照。如果需要取消创建中的快照（即快照进度尚未达到100%），也可以调用该进口将快照删除（即取消快照创建）。
+？	实例仅在Stopped或Running状态下才能删除快照。
+？	如果指定ID的快照不存在，请求将被忽略。
+？	如果快照已经被用于创建自定义镜像，则这个快照不能被删除。需要先删除相应的自定义镜像，快照才能被删除的。
+22451,ecs.aliyuncs.com.CreateSnapshot.2013-01-10,创建快照,对指定的磁盘存储设备创建快照。
+？	云服务器仅在Stopped或Running状态下才能创建快照。（但刚创建完成从未启动过的实例不能创建快照）
+？	新增加一块磁盘后，如果实例尚未启动过，新增的这块磁盘不能用于创建快照。
+？	如果快照创建没有完成（即进度没有达到100%），那么这个快照无法用于创建自定义镜像。
+？	现阶段一块磁盘最多只能创建2个快照。
+
+升级:
+去掉写订单逻辑.
+22452,ecs.aliyuncs.com.DeleteDisk.2013-01-10,删除磁盘,当某个磁盘设备不再使用时，可以删除磁盘。实例挂载的所有磁盘设备可以通过查询实例磁盘列表获接口获得。
+？	删除磁盘时实例状态只能为Running或Stopped中的一种
+？	若实例为Running状态，只有重启后操作方可生效。
+？	如果指定ID的磁盘不存在，请求将被忽略。
+？	磁盘被删除时，从该磁盘创建的快照会自动被删除。
+
+升级:
+增加boss订单逻辑.
+22453,ecs.aliyuncs.com.AddDisk.2013-01-10,为实例增加磁盘设备,为指定实例增加一个磁盘设备。可创建一个全新磁盘，或是基于一个快照创建新磁盘。
+？	实例状态必须为Running或Stopped状态中的一种。
+？	基于快照创建磁盘时，无需设置磁盘大小，磁盘大小与快照对应的磁盘大小一致。
+？	当实例处于Running状态时，挂载磁盘无需重启，即时生效。
+？	单个实例最多允许挂载5个磁盘设备，总容量不能超过5TB。
+
+升级:
+修改写订单逻辑.
+22454,ecs.aliyuncs.com.DeleteInstance.2013-01-10,删除实例,根据传入实例的名称来释放实例资源。释放后实例所使用的物理资源都被回收，相关数据全部丢失且永久不可恢复。
+？	实例状态必须为Starting或Stopped，才可以进行删除操作。删除后，实例的状态为Deleted，表示资源已释放，删除完成；对已处于Deleted状态的实例调用此操作，请求将被忽略。
+？	实例被删除时，挂载在实例上的磁盘会相应被删除。
+？	实例被删除后，相关数据全部丢失且永久不可恢复。
+
+升级:增加ChargeType判断.
+22455,ecs.aliyuncs.com.DescribeInstanceAttribute.2013-01-10,查询实例信息,查询指定实例的详细信息。
+
+升级:增加InternetChargeType.
+升级：增加SecurityControl
+22457,ecs.aliyuncs.com.CreateInstance.2013-01-10,创建实例,根据传入参数创建弹性计算实例。
+	在创建实例时，必须要选择镜像，用来确定新生产实例的系统盘配置。镜像即一块母盘，包含操作系统以及应用软件配置，基于镜像创建实例后，实例的系统盘即为此镜像的完全克隆（系统配置及大小）。
+	一个实例属于且只能属于一个安全组。安全组需要预先创建，可通过创建安全组接口创建，可以在新创建实例时指定，也可通过修改实例属性的接口来完成实例所属安全组变更。在同一个安全组内的实例内网可以相互访问，但不同安全组之间默认有防火墙隔离，不可相互访问，但可通过安全组授权（通过授权安全组权限接口实现）来设置此安全组的防火墙权限。创建实例时必须要指定其所位于的安全组。同一个安全组内的实例数量不能超过1000个，若组内实例数量超出限制，创建实例时若指定该安全组，会提示失败。同一个安全组规则不能超过100条。
+	可设置公网入出带宽最大值。
+	实例创建时，系统会自己根据所指定的镜像为系统分配一个相应大小的系统盘。如果需要为实例添加更多数据磁盘，请调用为实例增加磁盘设备接口。
+
+升级:增加参数,修改boss订单逻辑
+升级：增加NodeControlId；公网出带宽从200M改为1K
+22459,ecs.aliyuncs.com.RevokeSecurityGroup.2013-01-10,撤销安全组规则,取消Group对外提供的访问权限。支持两种取消授权方式：一是取消本Region内其他
+Group采用指定协议通过指定端口访问访问该Group；二是取消IP地址范围采用指定协议通
+过指定端口访问该Group，只有调用授权接口授权的权限条目才可以删除（参数值跟授权时
+的参数相同）。
+22460,ecs.aliyuncs.com.AuthorizeSecurityGroup.2013-01-10,授权安全组权限,设定安全组对外提供的访问权限，支持两种授权方式：  1、开放同一region内其他Group对其的访问权限；2、开放指定某IP 地址范围（CIDR格式）对其的访问权限。
+22461,ecs.aliyuncs.com.ModifyInstanceAttribute.2013-01-10,修改实例属性,修改实例密码、主机名、安全组等属性信息。 
+？  此操作只修改参数中显式指定了的属性，没有指定的属性将不会发生改变。 
+？  重置实例的密码，状态为Deleted或Starting的实例不可以进行此操作。重置密码
+需要重启实例后才能生效。
+22465,taobao.rp.refunds.agree,同意退款,卖家同意退款，支持批量退款，只允许子账号操作。淘宝退款一次最多能退20笔，总金额不超过6000元；天猫退款一次最多能退30笔，总金额不超过10000元。
+22466,taobao.rp.returngoods.agree,卖家同意退货,卖家同意退货，支持淘宝和天猫的订单。
+22467,taobao.trade.contact.get,获取交易联系信息,获取交易联系信息
+22479,taobao.qt.reports.get,批量查询质检报告,批量查询质检报告，目前只支持查询qtType=11（天猫真假鉴定）类型的报告
+22480,taobao.dd.store.get,获取点点门店信息,根据系统商门店id获取门店信息
+22481,taobao.ju.items.list.get,商家参团商品信息列表,商家通过本接口可以获取到自己的参团商品列表以及各个状态。
+22483,taobao.dd.store.table.add,新增门店桌台信息,新增门店桌台信息
+22484,taobao.dd.store.table.get,桌台信息更新,修改门店桌台信息
+22485,taobao.dd.store.table.delete,门店桌台信息删除,门店桌台信息删除
+22486,taobao.dd.store.table.update,门店桌台信息更新,门店桌台信息更新
+22492,taobao.dd.store.update,点点商户修改,更新支持点点业务的本地商户 一个字段的更新操作
+22494,taobao.dd.item.upshelf,点点菜品上架接口,点点菜品上架接口
+22495,taobao.dd.item.downshelf,菜品下架接口,菜品下架接口
+22499,taobao.dd.item.cate.list,获得店铺菜品分类列表,获得门店菜品得所有分类
+22500,taobao.dd.item.cate.get,查询单条菜品类目接口,查询单条菜品类目接口
+22501,taobao.dd.item.cate.update,修改点点菜品类目,修改点点菜品类目
+22502,taobao.dd.item.cate.add,新增点点菜品类目,新增点点菜品类目
+22504,taobao.dd.item.soldout,点点菜品沽清接口,点点菜品沽清接口
+22511,taobao.dd.order.heartbeat,淘宝点点门店在线状态心跳检测接口,确认门店在线状态的心跳检测接口
+22513,taobao.ebook.libs.search,查询参加活动的书库信息接口,分页查询参加活动的电子书的书库信息。
+22519,taobao.sns.bind.get,查询匹配的绑定,用来查询绑定信息
+22520,taobao.sns.bind.add,新增暗绑定信息,保存暗绑定数据
+22522,taobao.fenxiao.dealer.requisitionorder.remark.update,修改经销采购单备注,供应商修改经销采购单备注
+22526,taobao.train.agent.order.get,代理商获取订单信息回调API,代理商获取订单信息回调API
+22528,taobao.train.agent.returnticket.confirm,退票通知,火车票代理商接口——退票通知回调
+22529,taobao.train.agent.bookticket.confirm,火车票代理商接口&mdash;&mdash;确认出票是否成功,火车票代理商接口——确认出票是否成功
+22532,tmall.traderate.feeds.get,查询子订单对应的评价、追评以及语义标签,通过子订单ID获取天猫订单对应的评价，追评，以及对应的语义标签
+22533,tmall.traderate.itemtags.get,通过商品ID获取标签列表,通过商品ID获取标签详细信息
+22536,taobao.shop.weibo.open,开通微博淘宝版,给新浪微博提供的，用来一键开通微博淘宝版
+22541,taobao.clouddata.mbp.status.get,御膳房任务状态查询,提供御膳房任务状态查询
+22542,taobao.jindoucloud.message.send,发送消息接口,提供给isv发送千牛消息。接口还在内部调试中，isv先不要集成。
+22547,taobao.lz.st.warning.config,获取报警配置信息,获取卖家配置-波动预警和目标达成监控参数
+22554,taobao.tmc.user.get,获取用户已开通消息,查询指定用户开通的消息通道和组
+22556,taobao.tanx.creative.get,获取单个审核创意状态,获取单个审核创意状态
+22557,taobao.tanx.creatives.get,批量获取DSP用户的创意审核结果,批量获取DSP用户的创意审核结果
+22558,taobao.caipiao.issue.get,彩票投注的彩期控制,彩票投注的彩期控制
+22583,taobao.crm.comment.get,获取卖家会员备注,获取卖家对某个买家的备注
+22584,taobao.crm.comment.update,更新卖家会员备注,更新会员备注信息
+22585,taobao.crm.comment.add,添加卖家会员备注,给买家添加备注信息
+22588,taobao.ticket.item.add,发布门票宝贝,发布门票商品接口，只支持新版门票发布<br>
+注意门票商品必须发布到对应达尔文体系下的产品上，产品获取请走taobao.products.search接口。<br>
+门票商品的产品规格信息包含门票商品的价格，库存，有效期等。是门票核心信息。一个门票宝贝可能包含多个产品规格（产品对应产品规格的获取请走tmall.product.specs.get接口），可以指定每个产品规格在不同时间段下不同有效期的门票的不同价格和库存。具体信息请参见skus字段描述。
+22589,taobao.ticket.item.update,编辑新门票类目商品,编辑新门票类目商品<br>
+只有如下两种情况能够更换门票商品挂载的产品：从其他类目迁移到当前新门票类目，或当前商品挂载的产品被屏蔽<br>
+注意门票商品必须发布到对应达尔文体系下的产品上，产品获取请走taobao.products.search接口。
+门票商品的产品规格信息包含门票商品的价格，库存，有效期等。是门票核心信息。一个门票宝贝可能包含多个达尔文体系产品（产品对应达尔文体系产品的获取请走tmall.product.specs.get接口），可以指定每个达尔文体系产品在不同时间段下不同有效期的门票的不同价格和库存。具体信息请参见skus字段描述。
+22590,taobao.ticket.item.get,获取新门票类目商品信息,获取新门票类目商品信息，目前只支持门票二期的商品
+22591,taobao.ticket.items.get,批量获取新门票类目商品信息,批量获取新门票类目商品信息
+22593,taobao.qianniu.task.message.send,发送任务提醒消息,如果taskid不为空，则只发给task对应的单个接收人。如果taskid为空，则发给metadata_id对应的所有接收人。消息会以任务消息的形式发给客户端。
+22594,taobao.qianniu.tasks.get,获取指定的任务,获取指定的任务，可用的参数组合：
+task_ids + need_meta + fields：精确查找
+biz_type + sub_biz_type + biz_ids + need_meta + fields：按照业务ID查找
+biz_type + sub_biz_type + sender_uid + need_meta + fields：按照发起者查找
+biz_type + sub_biz_type + receiver_uid + need_meta + fields：按照执行者查找
+biz_type+modify_start_time+modify_end_time+fields:能支持指定修改时间的查询，用于增量查询等
+22595,taobao.qianniu.task.cancel,取消轻任务,由任务发起者调用
+22596,taobao.qianniu.task.finish,完成轻任务,由任务执行者调用
+22597,taobao.qianniu.task.update,更新轻任务,由任务执行者调用，sub_status，tag和memo至少提供一个
+22598,taobao.qianniu.taskmeta.update,更新任务元数据,由任务发起者调用
+22599,taobao.qianniu.task.create,创建轻任务,发起一个轻任务，分配给多个执行者，并发送消息提醒，由任务发起者调用
+22601,taobao.waimai.bcategory.get,外卖后台类目接口,查询外卖后台类目，二级结构
+22602,taobao.waimai.shopbycity.get,以城市分组的店铺列表,以城市为单位返回登陆用户店铺列表
+22603,taobao.waimai.itemlist.get,获取外卖商品列表,暂时是打算提供给淘宝助手用，将来打算支持top的各种对外卖宝贝的查询
+22604,taobao.waimai.item.pic.upload,外卖图片上传接口,外卖单张图片上传接口
+22605,taobao.waimai.item.add,新增外卖宝贝,上传一个外卖宝贝
+22606,taobao.waimai.item.update,外卖单条宝贝更新,更新单条外卖宝贝
+22607,taobao.waimai.item.operate,商品上下架删除接口,商品上下架、删除接口
+22608,taobao.waimai.item.get,获取外卖宝贝详情,查询宝贝详情，可根据入参获取需要的字段
+22612,taobao.dd.order.payquery,订单支付状态查询,查询淘点点订单的支付状态
+22615,taobao.weitao.feed.isrelation,是否关注,判断用户是否关注对应的公共账号
+22616,taobao.weitao.feed.remained,查询剩余数目,获取当前登录用户还能发送多少条Feed
+22617,taobao.weitao.feed.add,发表Feed,通过top接口发表微淘Feed
+22623,taobao.promotion.coupon.sns.send,微淘粉丝店铺优惠券发放接口,通过接口批量发放店铺优惠券（每次只能发送100张，只能发给当前授权卖家店铺的微淘粉丝），发送成功则返回为空，发送失败则返回失败的买家列表和发送成功的买家和优惠券的number。注：如果所有买家都发放失败的话，is_success也为true，建议调用者根据返回的集合判断是否送入的买家都发放成功了
+22624,taobao.wireless.qrcode.get,微淘二维码地址获取,为ISV提供可以唤醒主客的二维码服务
+22626,taobao.sp.content.getpage,分页查找内容,分页查找内容
+22627,taobao.sp.content.getalltag,获取所有的自定义标签,获取所有的自定义标签
+22633,taobao.sp.content.getdetailbyid,根据主键查找内容的详细信息,根据主键查找内容的详细信息
+22636,taobao.sp.content.deletebyid,按主键删除内容,按主键删除内容
+22651,taobao.item.add.rules.get,商品发布规则信息获取接口,在新的发布模式下，isv需要先获取一份发布规则，然后根据规则传入数据。该接口提供规则查询功能
+22652,tmall.product.specs.ticket.get,产品规格审核信息获取接口,批量根据specId查询产品规格审核信息包括产品规格状态，申请人，拒绝原因等
+22659,taobao.xhotel.roomtype.confirm,已废弃，勿用,房型确认
+22660,taobao.xhotel.roomtype.get,房型查询接口,房型查询房型查询接口返回结果增加date_confirm字段
+22661,taobao.xhotel.roomtype.update,房型更新接口（ID不存在自动新增）,酒店房型更新或添加
+22662,taobao.xhotel.roomtype.add,房型新增接口（ID重复变更新）,房型添加或更新
+22663,taobao.xhotel.get,酒店查询接口,酒店查询接口
+22664,taobao.xhotel.update,酒店更新接口（ID不存在自动新增）,酒店更新接口
+22665,taobao.xhotel.add,酒店新增接口（ID重复自动更新）,添加酒店或更新酒店
+22666,taobao.xhotel.room.get,已废弃，勿用,此接口用于查询一个商品，根据传入的gid查询商品信息。卖家只能查询自己的商品。
+22667,taobao.xhotel.rateplan.get,价格计划rateplan查询,酒店产品库rateplan查询
+22668,taobao.xhotel.gift.relationship.get,酒店产品库gift关联关系查询,酒店产品库gift关联关系查询
+22669,taobao.xhotel.gift.relationship.add,酒店产品库gift关联关系设置,酒店产品库gift关联关系设置
+22670,taobao.xhotel.rooms.update,房型共享库存推送接口（批量全量）,此接口用于更新多个集市酒店商品房态信息，根据传入的gids更新商品信息，该商品必须为对应的发布者才能执行更新操作。如果对应的商品在淘宝集市酒店系统中不存在，则会返回错误提示。是全量更新，非增量，会把之前的房态进行覆盖。
+22671,taobao.xhotel.room.update,房型库存推送接口（全量推送）,此接口用于更新一个酒店商品，根据传入的gid更新商品信息，该商品必须为对应的发布者才能执行更新操作。如果对应的商品在酒店系统中不存在，则会返回错误提示。
+22672,taobao.xhotel.rates.update,价格推送接口（批量全量）,酒店产品库rate批量更新房态信息
+22673,taobao.xhotel.rate.update,价格推送接口（全量更新）,酒店产品库rate更新
+22674,taobao.xhotel.rate.get,酒店产品库rate查询,酒店产品库rate查询
+22675,taobao.xhotel.rate.add,新增专享房价,酒店产品库rate添加
+22676,taobao.xhotel.rateplan.update,价格计划rateplan更新或添加,酒店产品库rateplan更新或添加
+22677,taobao.xhotel.rateplan.add,酒店产品库rateplan添加,酒店产品库rateplan
+22678,taobao.xhotel.room.add,已废弃，勿用,此接口用于发布一个集市酒店商品，商品的发布者是当前会话的用户。如果该酒店、该房型、该用户所对应的商品在淘宝集市酒店系统中已经存在，则会返回错误提示。
+22679,taobao.xhotel.gift.update,酒店产品库gift更新,酒店产品库gift更新
+22680,taobao.xhotel.gift.get,酒店产品库gift查询,酒店产品库gift查询
+22681,taobao.xhotel.gift.add,酒店产品库gift添加,酒店产品库gift添加
+22686,taobao.xhotel.confirm,已废弃，勿用,酒店确认接口
+22688,taobao.logistics.address.reachable,判定服务是否可达,根据输入的目标地址，判断服务是否可达。
+现已支持筛单的快递公司共15家：中国邮政、EMS、国通、汇通、快捷、全峰、优速、圆通、宅急送、中通、顺丰、天天、韵达、德邦快递、申通
+22709,taobao.flash.delete,flash文件删除,flash文件删除
+22710,taobao.flash.get,flash文件查询,flash文件查询
+22711,taobao.flash.upload,flash上传,上传flash 文件
+22713,taobao.sns.bind.getuids,临时获取加密后的淘宝id,淘浪账号体系互通功能，因为业务的需要。要求淘宝uid和新浪uid都需要加密，而已经存在大量的存量数据是未加密状态。因此，提供接口给新浪转换存量数据。
+22720,taobao.weitao.fans.basicinfo.query,查询粉丝基本信息,获取粉丝的基本信息
+22721,taobao.weitao.feeds.get,查询feed列表,通过top接口查询feed列表,只返回title和feedId
+22722,taobao.weitao.fellowlist.query,查询粉丝列表,拉取粉丝列表
+22723,taobao.weitao.feed.get,查询feed详情,通过top接口查询feed的详细内容
+22724,taobao.weitao.menu.create,创建菜单,创建菜单
+22725,taobao.weitao.menu.query,查询菜单,查询自定义菜单
+22726,taobao.weitao.menu.delete,删除菜单,删除菜单
+22727,taobao.weitao.fansright.send,按组给fans发放权益,给粉丝发放权益
+22733,taobao.weitao.messages.get,根据卖家id分页查询信息,根据卖家id分页查询消息列表
+22734,taobao.weitao.message.create,创建发送微淘消息,创建(发送)微淘消息,由卖家绑定手机菜单某些click事件，当用户操作菜单对应事件时，触发主动获取消息内容；也可以用户消息中心查看到消息
+22735,taobao.weitao.comments.get,获取feed的评论列表,通过top接口查询微淘feed的评论列表，包括评论内容详情
+22737,taobao.qianniu.taskmetas.count,任务元查询条数接口,任务元查询条数接口。以发起人查询。
+22738,taobao.qianniu.tasks.count,任务查询条数接口,任务查询条数接口
+22739,taobao.qianniu.task.increase,增加任务接收人接口,根据任务元id增加任务接收人
+22740,taobao.qianniu.taskmetas.get,任务元查询接口,任务元查询接口
+22749,taobao.waimai.shop.list,查询卖家外卖店列表,查询卖家外卖店列表
+22750,taobao.waimai.shop.update,更新店铺基本信息,更新外卖店基本信息
+22751,taobao.waimai.shop.businessrules.get,查询店铺营业规则,查询店铺营业规则
+22752,taobao.waimai.shop.businessrules.update,更新外卖店营业规则,更新外卖店营业规则
+22753,taobao.waimai.shop.delete,删除外卖店铺,删除外卖店铺
+22754,taobao.waimai.shop.close,外卖店铺歇业,外卖店铺歇业
+22755,taobao.waimai.shop.open,外卖店开启营业,外卖店开启营业
+22756,taobao.waimai.shop.get,获取外卖店信息,获取外卖店信息
+22757,taobao.qianniu.activity.signup.cancel,取消报名,取消活动报名
+22761,taobao.jipiao.agent.order.ticket,【机票代理商订单】订单回填票号/成功订单,淘宝机票代理商回填票号/成功订单
+22762,taobao.jipiao.agent.order.detail,【机票代理商订单】订单详情,根据淘宝系统订单号获取订单详情信息
+22773,taobao.gamecenter.tradeorder.createtradeorder,游戏中心商品购买下单,游戏商品创建订单
+22774,taobao.gamecenter.auctions.getAuction,根据商品id获取商品列表,查询单个商品信息
+22776,taobao.wireless.gamecenter.event.record,游戏中心事件服务接口,游戏中心事件服务接口,用于用户登录数据更新,数据记录等
+22777,taobao.wireless.gamecenter.query.ccount,查询已领取到的未挂的刮刮卡数量,查询已领取到的未挂的刮刮卡数量
+22780,taobao.wireless.gamecenter.gcoupon.query,黄金刮刮卡抽取接口,供客户端sdk调用,查询是否可以抽取普通刮刮卡
+22781,taobao.wireless.gamecenter.ccoupon.query,普通刮刮卡抽取接口,供客户端sdk调用,查询是否可以抽取普通刮刮卡
+22784,taobao.trade.acquire.closeorder,O2O撤销交易订单,O2O关闭订单(撤销交易)接口， 如果订单未付款，则直接关闭订单；如果订单已付款，则报错（这时需要调用退款接口）
+22785,taobao.trade.acquire.refund,O2O交易退款,交易退款
+22786,taobao.trade.acquire.order.query,二维码，声波，条码订单支付结果查询,二维码，声波，条码订单支付结果查询
+22787,taobao.trade.acquire.createandpay,O2O声波或者条码下单并支付接口,声波下单并支付接口
+22788,taobao.trade.acquire.precreate,o2o预下单,o2o  预下单（生成二维码）
+22816,taobao.jds.trade.traces.get,获取单条订单跟踪详情,获取聚石塔数据共享的交易全链路信息
+22819,taobao.jae.client.camera.takephoto,拍照上传,JAE 无线API开放 拍照上传组件
+22826,taobao.jae.client.relation.showfollowbutton,微淘关注,JAE 开放API 微淘关注
+22827,taobao.jae.client.sharing.showsharingmenu,分享组件,JAE API 分享组件
+22832,taobao.sp.content.detail.get,获取内容详情,获取内容详情
+22833,taobao.jae.client.context.getnetworkstatus,网络类型,JAE 开放API 获取网络类型
+22834,taobao.xhotel.order.search,酒店产品库订单查询,酒店产品库订单查询功能，查询90天内的订单
+22852,taobao.fenxiao.dealer.requisitionorder.create,创建经销采购申请,创建经销采购申请
+22860,taobao.qianniu.memos.get,备忘读取接口,读取备忘
+22864,taobao.trades.huashu.bought.get,已买到的华数电视订单,获取已买到的华数电视订单
+22866,taobao.trade.acquire.refund.query,o2o订单退款信息查询,o2o订单在商家发起某笔退款申请后，可以通过该接口查询退款结果信息
+22868,taobao.sns.msg.add,消息发送接口,将用户在华数电视上的操作转为一条用户消息，发送到用户的手机主客或PC端
+22880,alibaba.member.useridtomemberid.convert,userId转换为memberId,userId转换为memberId
+22882,taobao.logistics.order.query,物流订单查询,根据运单号查物流订单信息
+22883,taobao.jds.trades.statistics.diff,订单全链路状态统计差异比较,订单全链路状态统计差异比较
+22884,taobao.jds.trades.statistics.get,获取订单数量统计结果,获取订单数量统计结果
+22885,taobao.baodian.charge.chargetoconsume,充值并消费,充值并消费接口
+22886,tmall.point.exchange.income,合作方积分兑换成天猫积分,合作方积分兑换成天猫积分
+22894,taobao.item.barcode.update,更新商品条形码信息,通过该接口，将商品以及SKU上得条形码信息补全
+22895,taobao.item.modules.get,获取卖家自定义描述模块,根据查询条件，获取当前卖家的自定义描述模块列表
+提供给ISV，可以直接把模块插入描述中，提示描述发布效率
+22906,tmall.product.template.get,产品接口,产品模板获取接口，对于非关键属性的类目，发布达尔文(监管)产品时，必须先根据类目获取产品模板。<br/>
+产品模板定义产品发布需要的类目属性，包括：<br/>
+   关键属性:关键属性可以在类目上不存在。不存在的PID，默认为输入，没有子属性。属性名称在prop_name_str中取
+   绑定属性:内容为属性ID(PID)的列表,绑定属性肯定在类目上有，对应属性的类目特征，子属性请根据PID到类目上去取<br/>
+   过滤属性:内容有属性ID(PID)列表，很重要的属性，filter_properties包含的属性，必须填写<br/>
+   如果获取不到模板，非关键属性类目是不能发布产品的<br/>
+22928,tmall.brandcat.suiteconf.get,套装配置获取,该接口获取能发布套餐产品的类目，及对应的套餐配置。
+22933,taobao.item.cspu.move,达尔文商品老数据自动挂接,ISV传入商品和sku与cspu的映射信息，套餐对应sku的映射信息，自动完成达尔文老数据的挂接，返回商品信息
+22956,alibaba.mobile.ecs.instance.get,获取ECS实例列表,获取ECS实例列表
+22957,alibaba.mobile.ecs.monitor.get,ECS监控数据,获取ECS监控数据
+22958,alibaba.mobile.ecs.instance.detail.get,获取ECS实例详情,获取ECS实例详情
+22959,alibaba.mobile.ecs.region.get,获取ECS region 列表,获取ECS region列表
+22974,taobao.kelude.pts.account.order.create,创建PTS订购,创建PTS订购
+22975,ecs.aliyuncs.com.ResetDisk.2013-01-10,回滚快照,重置磁盘
+22986,taobao.weitao.qrcode.get,二维码生成服务,提供二维码生成服务top接口
+22994,taobao.vmarket.eticket.qrcode.upload,码商二维码图片上传,电子凭证的码商可以通过这个接口，上传他们发送的二维码图片
+22998,taobao.dd.takeout.export,导出外卖店信息,导出外卖店信息
